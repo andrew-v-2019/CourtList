@@ -31,3 +31,7 @@ _ReSharper*/
 #Nuget packages folder
 packages/
 /CourtList.sln.DotSettings.user
+/.idea/.idea.CourtList/.idea/.gitignore
+/.idea/.idea.CourtList/.idea/encodings.xml
+/.idea/.idea.CourtList/.idea/indexLayout.xml
+/.idea/.idea.CourtList/.idea/vcs.xml

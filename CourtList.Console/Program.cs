@@ -10,7 +10,7 @@ if (regionService == null)
     return;
 }
 
-var regionList = regionService?.GetRegionList(-1);
+var regionList = regionService?.GetRegionList(6);
 
 if (regionList?.RegionList == null)
 {

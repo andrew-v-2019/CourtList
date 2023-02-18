@@ -54,7 +54,7 @@ public class HandlerTests : IClassFixture<TestFixture>
     public void IsCorrectResult_FirstPage(int? paramPageNum)
     {
         var correctRegionModel = GetCorrectModel();
-        var correctPageLength = correctRegionModel.Pagination.PageLength;
+        var correctPageLength = _configurationService.GetInt(Field.PageLength);
         var correctPageCount = correctRegionModel.Pagination.PageCount;
 
         var correctPageNum = 1;
@@ -112,7 +112,7 @@ public class HandlerTests : IClassFixture<TestFixture>
     public void IsCorrectResult_MiddlePage()
     {
         var correctRegionModel = GetCorrectModel();
-        var correctPageLength = correctRegionModel.Pagination.PageLength;
+        var correctPageLength = _configurationService.GetInt(Field.PageLength);
         var correctPageCount = correctRegionModel.Pagination.PageCount;
 
         var pageNum = (int)(correctRegionModel.Pagination.PageCount / 2);
@@ -192,14 +192,14 @@ public class HandlerTests : IClassFixture<TestFixture>
     }
 
 
-    private static Request GetTestRequest(int? pageNum)
+    private Request GetTestRequest(int? pageNum)
     {
         var request = new Request()
         {
             queryStringParameters = new Dictionary<string, string>()
             {
-                { ParameterName.Login, "test" },
-                { ParameterName.Password, "testpass" }
+                { ParameterName.Login, _configurationService.GetString(Field.Login) },
+                { ParameterName.Password, _configurationService.GetString(Field.Password) }
             }
         };
 

@@ -38,7 +38,7 @@ namespace CourtList.Services
                 .Select(x => x)
                 .ToList();
             var optionList = optionNodeList
-                .Select(n => new Option(n.Attributes[Html.ValueAttr].Value, n.InnerText.Trim()))
+                .Select(n => new Option(n.Attributes[Html.ValueAttr].Value, n.InnerText.ShrinkString()))
                 .OrderBy(x => x.Text)
                 .ToList();
             return optionList;
