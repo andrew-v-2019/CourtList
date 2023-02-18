@@ -1,0 +1,13 @@
+D:\Git\CourtList\CourtList.Services\bin\Debug\net6.0\CourtList.Services.deps.json
+D:\Git\CourtList\CourtList.Services\bin\Debug\net6.0\CourtList.Services.dll
+D:\Git\CourtList\CourtList.Services\bin\Debug\net6.0\CourtList.Services.pdb
+D:\Git\CourtList\CourtList.Services\bin\Debug\net6.0\CourtList.Models.dll
+D:\Git\CourtList\CourtList.Services\bin\Debug\net6.0\CourtList.Models.pdb
+D:\Git\CourtList\CourtList.Services\obj\Debug\net6.0\CourtList.Services.csproj.AssemblyReference.cache
+D:\Git\CourtList\CourtList.Services\obj\Debug\net6.0\CourtList.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\CourtList\CourtList.Services\obj\Debug\net6.0\CourtList.Services.csproj.CoreCompileInputs.cache
+D:\Git\CourtList\CourtList.Services\obj\Debug\net6.0\CourtList.Services.csproj.CopyComplete
+D:\Git\CourtList\CourtList.Services\obj\Debug\net6.0\CourtList.Services.dll
+D:\Git\CourtList\CourtList.Services\obj\Debug\net6.0\refint\CourtList.Services.dll
+D:\Git\CourtList\CourtList.Services\obj\Debug\net6.0\CourtList.Services.pdb
+D:\Git\CourtList\CourtList.Services\obj\Debug\net6.0\ref\CourtList.Services.dll
