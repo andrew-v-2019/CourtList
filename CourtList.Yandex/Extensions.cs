@@ -14,7 +14,7 @@ public static class Extensions
             return string.Empty;
         }
 
-        return request.queryStringParameters[paramName];
+        return request.queryStringParameters[paramName].Trim();
     }
 
     public static int GetPage(this Request request)

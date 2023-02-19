@@ -21,7 +21,7 @@ namespace CourtList.Yandex
 
         private AuthModel GetAuthModel(Request request)
         {
-            var login = request.GetQueryStringParam(ParameterName.Login).Trim().ToLower();
+            var login = request.GetQueryStringParam(ParameterName.Login).ToLower();
             var pass = request.GetQueryStringParam(ParameterName.Password);
             var model = new AuthModel(login, pass);
             return model;
