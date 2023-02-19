@@ -1,4 +1,5 @@
-﻿using CourtList.Services;
+﻿using CourtList.Models;
+using CourtList.Services;
 using Microsoft.Extensions.DependencyInjection;
 
 
@@ -10,14 +11,8 @@ if (regionService == null)
     return;
 }
 
-var regionList = regionService?.GetRegionList(6);
-
-if (regionList?.RegionList == null)
-{
-    return;
-}
-
-foreach (var region in regionList.RegionList)
+var regionList = regionService?.GetRegionList(-1000);
+foreach (var region in regionList?.RegionList ?? new List<Region>())
 {
     Console.WriteLine($"{region.Subject.Id}. {region.Subject.Name}");
     foreach (var court in region.CourtList)
@@ -25,3 +20,5 @@ foreach (var region in regionList.RegionList)
         Console.WriteLine($"   - {court.Code}. {court.Name}");
     }
 }
+
+Console.ReadLine();
